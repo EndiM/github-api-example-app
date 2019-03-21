@@ -1,0 +1,13 @@
+@import '../../style/variables';
+.repositories {
+    min-height: 100%;
+    width: 100%;
+    padding: 30px;
+    background: #1a2930;
+    .toolbar {
+        display: flex;
+        @media screen and (max-width: $break-small) {
+            display: block;
+        }
+    }
+}

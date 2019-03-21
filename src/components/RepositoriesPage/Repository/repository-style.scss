@@ -1,0 +1,18 @@
+.repository {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background: 0 0;
+    border: 1px solid #e5e5e5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    span {
+        margin-right: 10px;
+    }
+    .current {
+        background-color: #8c531b;
+    }
+}

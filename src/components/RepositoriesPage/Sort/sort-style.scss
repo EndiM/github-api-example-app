@@ -1,0 +1,14 @@
+@import '../../../style/variables';
+.sort {
+    min-width: 200px;
+    @media screen and (max-width: $break-small) {
+        width:100%;
+    }
+    button {
+        min-width: 105px;
+        margin: 10px 10px 0 0;
+        @media screen and (max-width: $break-small) {
+            width:100%;
+        }
+    }
+}

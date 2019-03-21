@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+
+	<% for (var chunk in htmlWebpackPlugin.files.css) { %>
+	<link rel="preload" href="<%= htmlWebpackPlugin.files.css[chunk] %>" as="style">
+	<% } %>
+	<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+	<link rel="preload" href="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>" as="script">
+	<% } %>
+	<meta charset="utf-8">
+	<title>Github api example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+</head>
+
+<body></body>
+
+</html>

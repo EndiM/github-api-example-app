@@ -1,0 +1,25 @@
+@import '../../../style/variables';
+.wrapper {
+    width: 100%;
+    @media screen and (max-width: $break-medium) {
+        display: block;
+    }
+    div {
+        width: 100%;
+    }
+    .inputWrapper {
+        display: inline-flex;
+        @media screen and (max-width: $break-medium) {
+            display: block;
+            width: 100%;
+        }
+    }
+    .button {
+        display: inline-flex;
+        @media screen and (max-width: $break-medium) {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
