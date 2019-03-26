@@ -14,7 +14,7 @@ context("Organisation Page", () => {
 	it("can find successfully loaded result with image and headline Github", () => {
 		cy.get('.uk-placeholder').should('exist');
 		cy.get('.uk-placeholder').find('img').should('exist');
-		cy.get('.uk-placeholder').find('h4>span').should('have.text', "Github");
+		cy.get('.uk-placeholder').find('h4>span').should('have.text', "GitHub");
 	});
 
 	it("can find Not Found text when result is not positive", () => {
